@@ -24,6 +24,7 @@ const _nav = [
       color: 'info',
       text: 'NEW',
     },
+    role: ['ec']
   },
   {
     component: CNavTitle,
