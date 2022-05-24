@@ -82,7 +82,7 @@ const AddNid = React.lazy(() => import("./views/pages/nid/add-nid/AddNid"));
 const routes = [
   // { path: '/', exact: true, name: 'Home' },
   { path: "/", name: "Dashboard", element: Dashboard },
-  { path: "/dashboard/add-nid", name: "Add NID", element: AddNid },
+  { path: "/add-nid", name: "Add NID", element: AddNid },
   { path: "/theme", name: "Theme", element: Colors, exact: true },
   { path: "/theme/colors", name: "Colors", element: Colors },
   { path: "/theme/typography", name: "Typography", element: Typography },
