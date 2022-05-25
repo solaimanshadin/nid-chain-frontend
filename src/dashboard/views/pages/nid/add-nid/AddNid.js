@@ -10,17 +10,22 @@ import {
   CFormLabel,
   CFormSelect,
 } from "@coreui/react";
-import React from "react";
+import React, { useRef } from "react";
 
 const AddNid = () => {
+  const form = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <CCard>
       <CCardHeader>Add NID</CCardHeader>
       <CCardBody>
-        <CForm className="row g-3">
+        <CForm className="row g-3" ref={form} onSubmit={handleSubmit}>
           <CCol md={6}>
-            <CFormLabel htmlFor="inputEmail4">Email</CFormLabel>
-            <CFormInput type="email" id="inputEmail4" />
+            <CFormLabel htmlFor="name">Name</CFormLabel>
+            <CFormInput type="email" id="name" />
           </CCol>
           <CCol md={6}>
             <CFormLabel htmlFor="inputPassword4">Password</CFormLabel>
@@ -56,7 +61,7 @@ const AddNid = () => {
             <CFormCheck type="checkbox" id="gridCheck" label="Check me out" />
           </CCol>
           <CCol xs={12}>
-            <CButton type="submit">Sign in</CButton>
+            <CButton type="submit">Add NID</CButton>
           </CCol>
         </CForm>
       </CCardBody>

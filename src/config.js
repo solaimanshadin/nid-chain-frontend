@@ -1,1 +1,2 @@
 export const TaskContactAddress = "0xc9A2e19672b6C348E59ba6CbbD0544981B513709"
+export const NidContactAddress = "0x4690Cc15Aa3a954Fb36BaF5cCCFf7138D78C1f58"

@@ -6,13 +6,11 @@ import { CContainer, CSpinner } from "@coreui/react";
 import routes from "../routes";
 
 const AppContent = () => {
-  console.log(routes);
   return (
     <CContainer lg>
       <Suspense fallback={<CSpinner color="primary" />}>
         <Routes>
           {routes.map((route, idx) => {
-            console.log(route.exact);
             return (
               route.element && (
                 <Route
